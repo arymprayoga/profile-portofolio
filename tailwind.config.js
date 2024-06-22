@@ -14,7 +14,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                inconsolata: ['Inconsolata', 'monospace'],
+                dancing: ['Dancing Script', 'cursive'],
             },
         },
     },
