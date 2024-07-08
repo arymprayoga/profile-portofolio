@@ -12,7 +12,6 @@ export default {
         extend: {
             fontFamily: {
                 inconsolata: ['Inconsolata', 'monospace'],
-                dancing: ['Dancing Script', 'cursive'],
             },
         },
     },

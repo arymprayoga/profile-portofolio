@@ -3,3 +3,8 @@
 @import "tailwindcss/utilities";
 
 /* This is all you. */
+
+@font-face {
+    font-family: "Inconsolata";
+    src:  url("../../public/assets/Inconsolata-Regular.ttf") format("truetype");
+}
