@@ -1,0 +1,104 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: secondary_title
+            field:
+              type: text
+              display: 'Secondary Title'
+          -
+            handle: content
+            field:
+              type: code
+              display: Content
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
+          -
+            handle: background_image
+            field:
+              max_files: 1
+              mode: grid
+              container: assets
+              type: assets
+              display: 'Background Image'
+          -
+            handle: profile_picture
+            field:
+              max_files: 1
+              container: assets
+              type: assets
+              display: 'Profile Picture'
+          -
+            handle: html_field
+            field:
+              type: html
+              display: 'HTML Field'
+          -
+            handle: secondary_content
+            field:
+              type: code
+              display: 'Secondary Content'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+  style:
+    display: Style
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: background_color
+            field:
+              type: text
+              display: 'Background Color'
+          -
+            handle: primary_color
+            field:
+              type: text
+              display: 'Primary Color'
+          -
+            handle: secondary_color
+            field:
+              type: text
+              display: 'Secondary Color'

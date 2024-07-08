@@ -1,0 +1,24 @@
+{{ collection:blog as="posts" }}
+{{ posts }}
+<div class="w-full px-10 py-6 bg-white rounded-lg shadow-md">
+    <div class="flex justify-between items-center">
+        <span class="font-light text-gray-600">{{ date format="D, j M Y" }}</span>
+        <a class="px-2 py-1 bg-gray-600 text-gray-100 font-bold rounded hover:bg-gray-500" href="#">Laravel</a>
+    </div>
+    <div class="mt-2">
+        <a class="text-2xl text-gray-700 font-bold hover:underline" href="{{ url }}">{{ title }}</a>
+        <p class="mt-2 text-gray-600">lorem ipsum dolor amet</p>
+    </div>
+    <div class="flex justify-between items-center mt-4">
+        <a class="text-blue-500 hover:underline" href="{{ url }}">Read more</a>
+        <div>
+            <div class="flex items-center">
+                <img class="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block" src="{{ author:avatar }}" alt="author:avatar:alt ">
+                <h1 class="text-gray-700 font-bold">{{ author:name }}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+{{ /posts }}
+{{ /collection:blog }}

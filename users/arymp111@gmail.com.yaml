@@ -1,0 +1,9 @@
+name: Ary
+super: true
+avatar: pp.jpg
+id: 25089310-9814-4994-825c-ddca49da5da2
+password_hash: $2y$12$Qs8Xb34/Ewy75qEud/WlvOfvtTAasyxmvrjQHHTdEIOSDL/g0iB66
+preferences:
+  collections:
+    pages:
+      after_save: continue_editing
